@@ -1,4 +1,6 @@
-function out = Func_JorhNorman_leaf_temperature_efast(X,Ci,constant)
+function out = trait_based_energy_balance_model(X,Ci,constant)
+% X is the input parameters, including 12 parameters
+% Ci is the intercellular co2 concentration, unit:ppm
 Tleaf=X(:,7);
 %Ci=init_paras(:,2);
 Leaf_paras.d=X(:,1)*0.72; % m leaf size=leaf width*0.72 (Campbell and Norman., 2012)
